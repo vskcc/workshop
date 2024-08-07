@@ -18,10 +18,10 @@ metadata:
 #  labels:
 #    key1: value1
   tags:
-    - yournamehere
+    - vkorotkevich
 spec:
   type: service
-  owner: change-value
+  owner: TeamA
   lifecycle: experimental
 #  system: Demo
   dependsOn:
