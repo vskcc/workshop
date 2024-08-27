@@ -1,13 +1,24 @@
-apiVersion: scaffolder.backstage.io/v1beta3
-kind: Template
-# some metadata about the template itself
+apiVersion: backstage.io/v1alpha1
+kind: Component
 metadata:
   name: Presence-Service
-  title: Provision a New Application Pattern
-  description: Creates a new GitHub repository according to standardized application patterns
+  description: Device xagent could post presence data on startup or by demand.
+  annotations:
+    pagerduty.com/integration-key: <sample-service-integration-key>
+  tags:
+    - java
+    - xcloud
+    - presence
+  links:
+    - url: https://arlo.com
+      title: Main resource
+      icon: dashboard
+      type: admin-dashboard
 spec:
-  owner: TeamA
+  owner: Xcloud
+  lifecycle: dev
   type: service
+  system: xcloud
   # these are the steps which are rendered in the frontend with the form input
   parameters:
     - title: Fill in the repo details
